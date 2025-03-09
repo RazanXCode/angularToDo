@@ -1,0 +1,17 @@
+.todo-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.error {
+  color: red;
+  font-size: 12px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
