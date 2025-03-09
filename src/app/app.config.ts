@@ -12,18 +12,3 @@ export const appConfig: ApplicationConfig = {
   providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideClientHydration(withEventReplay()), provideStoreDevtools({ maxAge: 25, logOnly: !isDevMode() }),provideStore({ tasks:taskReducer  })]
 };
 
-
-// import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
-// import { TodoComponent } from './app/todo/todo.component';
-// import { provideStore } from '@ngrx/store';
-// import { taskReducer } from './app/state/task.reducer';
-// import { ReactiveFormsModule } from '@angular/forms';
-
-// // Bootstrapping the Standalone Component and providing the store
-// platformBrowserDynamic()
-//   .bootstrapModule(TodoComponent, {
-//     providers: [
-//       provideStore({ task: taskReducer }),
-//     ],
-//   })
-//   .catch(err => console.error(err));

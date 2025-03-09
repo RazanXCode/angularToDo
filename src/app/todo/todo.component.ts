@@ -1,35 +1,3 @@
-// import { Component } from '@angular/core';
-// import { ReactiveFormsModule,FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
-// import { CommonModule } from '@angular/common'
-
-// @Component({
-//   selector: 'app-todo',
-//   standalone: true,
-//   imports: [ReactiveFormsModule, CommonModule],
-//   templateUrl: './todo.component.html',
-//   styleUrl: './todo.component.css'
-// })
-// export class TodoComponent {
-//   todoForm: FormGroup;
-//   taskList: string[] = [];
-
-//   constructor(private fb: FormBuilder) {
-//     // Initialize the form group with FormControl for task input
-//     this.todoForm = this.fb.group({
-//       task: new FormControl('', [Validators.required, Validators.minLength(1)]), // Validation to prevent empty tasks
-//     });
-//   }
-
-//   onSubmit() {
-//     if (this.todoForm.valid) {
-//       // Push the task to the task list
-//       this.taskList.push(this.todoForm.value.task);
-//       // Reset the form after submitting
-//       this.todoForm.reset();
-//     }
-//   }
-
-// }
 
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
